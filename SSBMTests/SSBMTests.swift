@@ -29,7 +29,7 @@ class SSBMTests: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
-            // Put the code you want to measure the time of here.
+            _ = SSByte.invertDoubleWord(0x12345678)
         }
     }
     
@@ -37,7 +37,6 @@ class SSBMTests: XCTestCase {
         XCTAssertTrue(SSByte.getBitOfByte(9, bitNumber: 0))
         XCTAssertFalse(SSByte.getBitOfByte(8, bitNumber: 5))
         XCTAssertTrue(SSByte.getBitOfByte(189, bitNumber: 7))
-        XCTAssertTrue(8 --> 3)
     }
     
     func testSetBit() {
@@ -53,8 +52,23 @@ class SSBMTests: XCTestCase {
     func testRightRotate() {
         let b : UInt8 = SSByte.rotateRightByte(240, bits: 5)
         XCTAssertTrue(b == 135)
-        _ = 135 >>> 2
+    }
+    
+    func testRevByte() {
+        let b : UInt8 = SSByte.reverseByte(UInt8(1))
+        XCTAssertTrue(b == 128)
+    }
+    
+    func testRevWord() {
+        let w : UInt16 = SSByte.reverseWord(UInt16(1))
+        XCTAssertTrue(w == 32768)
+    }
+    
+    func testDoubletoFloat() {
+        let test : UInt32 = 0xc3c09400
+        let f : Float = SSByte.doubleWordToFloat(test)
         
+        XCTAssertTrue((f < -385.0) && (f > -390.0))
     }
     
 }

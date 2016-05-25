@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SSByte Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SSByte" class="dashAnchor"></a>
+    <a title="SSByte Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (17% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SSByte Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SSByte.html">SSByte</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF23Super_Swift_Bytes_Meleeoi3lllFTVs6UInt32Si_S0_">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF23Super_Swift_Bytes_Meleeoi3lllFTVs6UInt16Si_S0_">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF23Super_Swift_Bytes_Meleeoi3lllFTVs5UInt8Si_S0_">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF23Super_Swift_Bytes_Meleeoi3gggFTVs6UInt32Si_S0_">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF23Super_Swift_Bytes_Meleeoi3gggFTVs6UInt16Si_S0_">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF23Super_Swift_Bytes_Meleeoi3gggFTVs5UInt8Si_S0_">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SSByte</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                </div>
+              </div>
+            <p>Handler class for dealing with byte, words and bits.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte12getBitOfByteFTVs5UInt89bitNumberS1__Sb"></a>
+                    <a name="//apple_ref/swift/Method/getBitOfByte(_:bitNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte12getBitOfByteFTVs5UInt89bitNumberS1__Sb">getBitOfByte(_:bitNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the value of a specific bit in a byte.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">getBitOfByte</span><span class="p">(</span><span class="nv">byte</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="nv">bitNumber</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byte</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte to get a bit from.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bitNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The position of the bit to get (0-7).</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Bool value of the requested bit.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte12setBitOfByteFTVs5UInt89bitNumberS1_5valueSb_S1_"></a>
+                    <a name="//apple_ref/swift/Method/setBitOfByte(_:bitNumber:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte12setBitOfByteFTVs5UInt89bitNumberS1_5valueSb_S1_">setBitOfByte(_:bitNumber:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the value of a specific bit in a byte.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setBitOfByte</span><span class="p">(</span><span class="nv">byte</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="nv">bitNumber</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byte</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte to set a bit in.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bitNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The position of the bit to set (0-7).</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bool value to set the bit to.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The input byte with the requested bit set.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte14rotateLeftByteFTVs5UInt84bitsSi_S1_"></a>
+                    <a name="//apple_ref/swift/Method/rotateLeftByte(_:bits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte14rotateLeftByteFTVs5UInt84bitsSi_S1_">rotateLeftByte(_:bits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotates a byte left by a specified number of bits.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">rotateLeftByte</span><span class="p">(</span><span class="nv">byte</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="nv">bits</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byte</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte to rotate.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bits</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of bits to rotate by.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The rotated byte.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte15rotateRightByteFTVs5UInt84bitsSi_S1_"></a>
+                    <a name="//apple_ref/swift/Method/rotateRightByte(_:bits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte15rotateRightByteFTVs5UInt84bitsSi_S1_">rotateRightByte(_:bits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotates a byte right by a specified number of bits.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">rotateRightByte</span><span class="p">(</span><span class="nv">byte</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="nv">bits</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byte</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte to rotate.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bits</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of bits to rotate by.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The rotated byte.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte11reverseByteFVs5UInt8S1_"></a>
+                    <a name="//apple_ref/swift/Method/reverseByte(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte11reverseByteFVs5UInt8S1_">reverseByte(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reverses the order of the bits in a byte.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">reverseByte</span><span class="p">(</span><span class="nv">byte</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>byte</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The byte to reverse.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The reversed byte.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte10invertByteFVs5UInt8S1_"></a>
+                    <a name="//apple_ref/swift/Method/invertByte(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte10invertByteFVs5UInt8S1_">invertByte(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte16getLowByteOfWordFVs6UInt16Vs5UInt8"></a>
+                    <a name="//apple_ref/swift/Method/getLowByteOfWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte16getLowByteOfWordFVs6UInt16Vs5UInt8">getLowByteOfWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte17getHighByteOfWordFVs6UInt16Vs5UInt8"></a>
+                    <a name="//apple_ref/swift/Method/getHighByteOfWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte17getHighByteOfWordFVs6UInt16Vs5UInt8">getHighByteOfWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte12getBitOfWordFTVs6UInt169bitNumberVs5UInt8_Sb"></a>
+                    <a name="//apple_ref/swift/Method/getBitOfWord(_:bitNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte12getBitOfWordFTVs6UInt169bitNumberVs5UInt8_Sb">getBitOfWord(_:bitNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte12setBitOfWordFTVs6UInt169bitNumberVs5UInt85valueSb_S1_"></a>
+                    <a name="//apple_ref/swift/Method/setBitOfWord(_:bitNumber:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte12setBitOfWordFTVs6UInt169bitNumberVs5UInt85valueSb_S1_">setBitOfWord(_:bitNumber:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte13wordFromBytesFTVs5UInt87lowByteS1__Vs6UInt16"></a>
+                    <a name="//apple_ref/swift/Method/wordFromBytes(_:lowByte:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte13wordFromBytesFTVs5UInt87lowByteS1__Vs6UInt16">wordFromBytes(_:lowByte:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte15swapBytesInWordFVs6UInt16S1_"></a>
+                    <a name="//apple_ref/swift/Method/swapBytesInWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte15swapBytesInWordFVs6UInt16S1_">swapBytesInWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte14rotateLeftWordFTVs6UInt164bitsSi_S1_"></a>
+                    <a name="//apple_ref/swift/Method/rotateLeftWord(_:bits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte14rotateLeftWordFTVs6UInt164bitsSi_S1_">rotateLeftWord(_:bits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte15rotateRightWordFTVs6UInt164bitsSi_S1_"></a>
+                    <a name="//apple_ref/swift/Method/rotateRightWord(_:bits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte15rotateRightWordFTVs6UInt164bitsSi_S1_">rotateRightWord(_:bits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte11reverseWordFVs6UInt16S1_"></a>
+                    <a name="//apple_ref/swift/Method/reverseWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte11reverseWordFVs6UInt16S1_">reverseWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte10invertWordFVs6UInt16S1_"></a>
+                    <a name="//apple_ref/swift/Method/invertWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte10invertWordFVs6UInt16S1_">invertWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte22getLowWordOfDoubleWordFVs6UInt32Vs6UInt16"></a>
+                    <a name="//apple_ref/swift/Method/getLowWordOfDoubleWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte22getLowWordOfDoubleWordFVs6UInt32Vs6UInt16">getLowWordOfDoubleWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte23getHighWordOfDoubleWordFVs6UInt32Vs6UInt16"></a>
+                    <a name="//apple_ref/swift/Method/getHighWordOfDoubleWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte23getHighWordOfDoubleWordFVs6UInt32Vs6UInt16">getHighWordOfDoubleWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte18getBitOfDoubleWordFTVs6UInt329bitNumberVs5UInt8_Sb"></a>
+                    <a name="//apple_ref/swift/Method/getBitOfDoubleWord(_:bitNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte18getBitOfDoubleWordFTVs6UInt329bitNumberVs5UInt8_Sb">getBitOfDoubleWord(_:bitNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte18setBitOfDoubleWordFTVs6UInt329bitNumberVs5UInt85valueSb_S1_"></a>
+                    <a name="//apple_ref/swift/Method/setBitOfDoubleWord(_:bitNumber:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte18setBitOfDoubleWordFTVs6UInt329bitNumberVs5UInt85valueSb_S1_">setBitOfDoubleWord(_:bitNumber:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte19doubleWordFromWordsFTVs6UInt167lowWordS1__Vs6UInt32"></a>
+                    <a name="//apple_ref/swift/Method/doubleWordFromWords(_:lowWord:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte19doubleWordFromWordsFTVs6UInt167lowWordS1__Vs6UInt32">doubleWordFromWords(_:lowWord:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte21swapWordsInDoubleWordFVs6UInt32S1_"></a>
+                    <a name="//apple_ref/swift/Method/swapWordsInDoubleWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte21swapWordsInDoubleWordFVs6UInt32S1_">swapWordsInDoubleWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte20rotateLeftDoubleWordFTVs6UInt324bitsSi_S1_"></a>
+                    <a name="//apple_ref/swift/Method/rotateLeftDoubleWord(_:bits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte20rotateLeftDoubleWordFTVs6UInt324bitsSi_S1_">rotateLeftDoubleWord(_:bits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte21rotateRightDoubleWordFTVs6UInt324bitsSi_S1_"></a>
+                    <a name="//apple_ref/swift/Method/rotateRightDoubleWord(_:bits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte21rotateRightDoubleWordFTVs6UInt324bitsSi_S1_">rotateRightDoubleWord(_:bits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte17reverseDoubleWordFVs6UInt32S1_"></a>
+                    <a name="//apple_ref/swift/Method/reverseDoubleWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte17reverseDoubleWordFVs6UInt32S1_">reverseDoubleWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte16invertDoubleWordFVs6UInt32S1_"></a>
+                    <a name="//apple_ref/swift/Method/invertDoubleWord(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte16invertDoubleWordFVs6UInt32S1_">invertDoubleWord(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC23Super_Swift_Bytes_Melee6SSByte17doubleWordToFloatFVs6UInt32Sf"></a>
+                    <a name="//apple_ref/swift/Method/doubleWordToFloat(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC23Super_Swift_Bytes_Melee6SSByte17doubleWordToFloatFVs6UInt32Sf">doubleWordToFloat(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SSByte</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-05-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
