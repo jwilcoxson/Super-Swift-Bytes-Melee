@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5E145FD11CF510D30097C317 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E145FD01CF510D30097C317 /* main.swift */; };
+		5E145FD81CF511150097C317 /* SSByte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E145FD71CF511150097C317 /* SSByte.swift */; };
+		5E145FE01CF527F30097C317 /* SSBMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E145FDF1CF527F30097C317 /* SSBMTests.swift */; };
+		5E145FE71CF532E00097C317 /* SSByte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E145FD71CF511150097C317 /* SSByte.swift */; };
+		5E98B67E1CF7DC49006C9676 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5E98B67D1CF7DC49006C9676 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,22 @@
 /* Begin PBXFileReference section */
 		5E145FCD1CF510D30097C317 /* Super Swift Bytes Melee */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Super Swift Bytes Melee"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E145FD01CF510D30097C317 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5E145FD71CF511150097C317 /* SSByte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSByte.swift; sourceTree = "<group>"; };
+		5E145FDD1CF527F30097C317 /* SSBMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSBMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E145FDF1CF527F30097C317 /* SSBMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSBMTests.swift; sourceTree = "<group>"; };
+		5E145FE11CF527F30097C317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E98B67D1CF7DC49006C9676 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5E145FCA1CF510D30097C317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E145FDA1CF527F30097C317 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +57,9 @@
 		5E145FC41CF510D30097C317 = {
 			isa = PBXGroup;
 			children = (
+				5E98B67D1CF7DC49006C9676 /* README.md */,
 				5E145FCF1CF510D30097C317 /* Super Swift Bytes Melee */,
+				5E145FDE1CF527F30097C317 /* SSBMTests */,
 				5E145FCE1CF510D30097C317 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5E145FCD1CF510D30097C317 /* Super Swift Bytes Melee */,
+				5E145FDD1CF527F30097C317 /* SSBMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,18 @@
 			isa = PBXGroup;
 			children = (
 				5E145FD01CF510D30097C317 /* main.swift */,
+				5E145FD71CF511150097C317 /* SSByte.swift */,
 			);
 			path = "Super Swift Bytes Melee";
+			sourceTree = "<group>";
+		};
+		5E145FDE1CF527F30097C317 /* SSBMTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E145FDF1CF527F30097C317 /* SSBMTests.swift */,
+				5E145FE11CF527F30097C317 /* Info.plist */,
+			);
+			path = SSBMTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 5E145FCD1CF510D30097C317 /* Super Swift Bytes Melee */;
 			productType = "com.apple.product-type.tool";
 		};
+		5E145FDC1CF527F30097C317 /* SSBMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E145FE21CF527F30097C317 /* Build configuration list for PBXNativeTarget "SSBMTests" */;
+			buildPhases = (
+				5E145FD91CF527F30097C317 /* Sources */,
+				5E145FDA1CF527F30097C317 /* Frameworks */,
+				5E145FDB1CF527F30097C317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSBMTests;
+			productName = SSBMTests;
+			productReference = 5E145FDD1CF527F30097C317 /* SSBMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +139,9 @@
 				ORGANIZATIONNAME = "Joe Wilcoxson";
 				TargetAttributes = {
 					5E145FCC1CF510D30097C317 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5E145FDC1CF527F30097C317 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -110,16 +159,38 @@
 			projectRoot = "";
 			targets = (
 				5E145FCC1CF510D30097C317 /* Super Swift Bytes Melee */,
+				5E145FDC1CF527F30097C317 /* SSBMTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E145FDB1CF527F30097C317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E145FC91CF510D30097C317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E98B67E1CF7DC49006C9676 /* README.md in Sources */,
 				5E145FD11CF510D30097C317 /* main.swift in Sources */,
+				5E145FD81CF511150097C317 /* SSByte.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E145FD91CF527F30097C317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E145FE71CF532E00097C317 /* SSByte.swift in Sources */,
+				5E145FE01CF527F30097C317 /* SSBMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +282,7 @@
 		5E145FD51CF510D30097C317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -218,6 +290,29 @@
 		5E145FD61CF510D30097C317 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E145FE31CF527F30097C317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SSBMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wilcoxson.SSBMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E145FE41CF527F30097C317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SSBMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.wilcoxson.SSBMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -241,6 +336,16 @@
 				5E145FD61CF510D30097C317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E145FE21CF527F30097C317 /* Build configuration list for PBXNativeTarget "SSBMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E145FE31CF527F30097C317 /* Debug */,
+				5E145FE41CF527F30097C317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
