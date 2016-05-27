@@ -472,8 +472,6 @@ class SSByte {
      - returns: The float value with the same bit representation in memory.
      */
     
-    // TODO: Check and update for NaN values.
-    
     class func doubleWordToFloat(double: UInt32) -> Float
     {
         let sign = Float(getBitOfDoubleWord(double, bitNumber: 31) ? -1.0 : 1.0)
@@ -487,7 +485,6 @@ class SSByte {
                 exponent = exponent + Int(pow(2.0, Double(index - 23)))
             }
         }
-        exponent = exponent - 127
         
         for index : UInt8 in 0...22
         {
@@ -496,6 +493,13 @@ class SSByte {
                 mantissa = mantissa + (1.0 / pow(2.0, Double(23 - index)))
             }
         }
+        
+        if ((exponent == 255) && (mantissa > 0.0))
+        {
+            return Float.NaN
+        }
+        
+        exponent = exponent - 127
         
         return sign * Float(pow(2.0, Double(exponent))) * Float(mantissa)
     }

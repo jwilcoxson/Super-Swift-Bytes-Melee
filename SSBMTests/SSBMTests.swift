@@ -65,10 +65,16 @@ class SSBMTests: XCTestCase {
     }
     
     func testDoubletoFloat() {
-        let test : UInt32 = 0xc3c09400
-        let f : Float = SSByte.doubleWordToFloat(test)
+        var test : UInt32 = 0xc3c09400
+        var f : Float = SSByte.doubleWordToFloat(test)
         
         XCTAssertTrue((f < -385.0) && (f > -390.0))
+        
+        test = 0x7fc00000
+        f = SSByte.doubleWordToFloat(test)
+        
+        XCTAssertTrue(f.isNaN)
+        
     }
     
 }
