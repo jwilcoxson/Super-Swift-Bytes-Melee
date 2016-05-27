@@ -12,24 +12,78 @@ import Foundation
 
 //Rotate Right Operator
 infix operator >>> {associativity left}
+
+/**
+ Rotate UInt8 right.
+ 
+ - parameter lhs: The UInt8 to rotate.
+ - parameter rhs: The number of bits to rotate by.
+ - returns: The rotated UInt8.
+ */
+
 func >>> (lhs: UInt8, rhs: Int) -> UInt8 {
     return SSByte.rotateRightByte(lhs, bits: rhs)
 }
+
+/**
+ Rotate UInt16 right.
+ 
+ - parameter lhs: The UInt16 to rotate.
+ - parameter rhs: The number of bits to rotate by.
+ - returns: The rotated UInt16.
+ */
+
 func >>> (lhs: UInt16, rhs: Int) -> UInt16 {
     return SSByte.rotateRightWord(lhs, bits: rhs)
 }
+
+/**
+ Rotate UInt32 right.
+ 
+ - parameter lhs: The UInt32 to rotate.
+ - parameter rhs: The number of bits to rotate by.
+ - returns: The rotated UInt32.
+ */
+
 func >>> (lhs: UInt32, rhs: Int) -> UInt32 {
     return SSByte.rotateRightDoubleWord(lhs, bits: rhs)
 }
 
 //Rotate Left Operator
 infix operator <<< {associativity left}
+
+/**
+ Rotate UInt8 left.
+ 
+ - parameter lhs: The UInt8 to rotate.
+ - parameter rhs: The number of bits to rotate by.
+ - returns: The rotated UInt8.
+ */
+
 func <<< (lhs: UInt8, rhs: Int) -> UInt8 {
     return SSByte.rotateLeftByte(lhs, bits: rhs)
 }
+
+/**
+ Rotate UInt16 left.
+ 
+ - parameter lhs: The UInt16 to rotate.
+ - parameter rhs: The number of bits to rotate by.
+ - returns: The rotated UInt16.
+ */
+
 func <<< (lhs: UInt16, rhs: Int) -> UInt16 {
     return SSByte.rotateLeftWord(lhs, bits: rhs)
 }
+
+/**
+ Rotate UInt32 left.
+ 
+ - parameter lhs: The UInt32 to rotate.
+ - parameter rhs: The number of bits to rotate by.
+ - returns: The rotated UInt32.
+ */
+
 func <<< (lhs: UInt32, rhs: Int) -> UInt32 {
     return SSByte.rotateLeftDoubleWord(lhs, bits: rhs)
 }
