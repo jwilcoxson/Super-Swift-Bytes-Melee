@@ -553,6 +553,11 @@ class SSByte {
             return Float.NaN
         }
         
+        if ((exponent == 255) && (mantissa == 0.0))
+        {
+            return Float.infinity
+        }
+        
         exponent = exponent - 127
         
         return sign * Float(pow(2.0, Double(exponent))) * Float(mantissa)
