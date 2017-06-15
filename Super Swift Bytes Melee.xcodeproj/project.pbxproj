@@ -140,6 +140,7 @@
 				TargetAttributes = {
 					5E145FCC1CF510D30097C317 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 					};
 					5E145FDC1CF527F30097C317 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -284,6 +285,7 @@
 			buildSettings = {
 				DEFINES_MODULE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -292,6 +294,7 @@
 			buildSettings = {
 				DEFINES_MODULE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -104,7 +104,7 @@ class SSByte {
       - returns: The Bool value of the requested bit.
     */
     
-    class func getBitOfByte(byte: UInt8, bitNumber: UInt8) -> Bool
+    class func getBitOfByte(_ byte: UInt8, bitNumber: UInt8) -> Bool
     {
         let b = byte >> (bitNumber % 8)
         
@@ -120,7 +120,7 @@ class SSByte {
      - returns: The input byte with the requested bit set.
      */
     
-    class func setBitOfByte(byte: UInt8, bitNumber: UInt8, value: Bool) -> UInt8
+    class func setBitOfByte(_ byte: UInt8, bitNumber: UInt8, value: Bool) -> UInt8
     {
         return (value ? (byte ^ (0x01 << (bitNumber % 8))) : byte & rotateLeftByte(0xFE, bits: Int(bitNumber % 8)))
     }
@@ -133,7 +133,7 @@ class SSByte {
      - returns: The rotated byte.
     */
     
-    class func rotateLeftByte(byte: UInt8, bits: Int) -> UInt8
+    class func rotateLeftByte(_ byte: UInt8, bits: Int) -> UInt8
     {
         let w = UInt16(byte) << UInt16(bits % 8)
         
@@ -148,7 +148,7 @@ class SSByte {
      - returns: The rotated byte.
     */
     
-    class func rotateRightByte(byte: UInt8, bits: Int) -> UInt8
+    class func rotateRightByte(_ byte: UInt8, bits: Int) -> UInt8
     {
         let w = (UInt16(byte) << 8) >> UInt16(bits % 8)
         
@@ -162,7 +162,7 @@ class SSByte {
      - returns: The reversed byte.
      */
     
-    class func reverseByte(byte: UInt8) -> UInt8
+    class func reverseByte(_ byte: UInt8) -> UInt8
     {
         var b : UInt8 = 0x00
         for index :UInt8 in 0...7
@@ -179,7 +179,7 @@ class SSByte {
      - returns: The inverted byte.
      */
     
-    class func invertByte(byte: UInt8) -> UInt8
+    class func invertByte(_ byte: UInt8) -> UInt8
     {
         var b : UInt8 = 0x00
         for index : UInt8 in 0...7
@@ -198,7 +198,7 @@ class SSByte {
      - returns: The lower (least significant) byte of the word.
      */
     
-    class func getLowByteOfWord(word: UInt16) -> UInt8
+    class func getLowByteOfWord(_ word: UInt16) -> UInt8
     {
         return UInt8(truncatingBitPattern: word)
     }
@@ -210,7 +210,7 @@ class SSByte {
      - returns: The higher (most significant) byte of the word.
      */
     
-    class func getHighByteOfWord(word: UInt16) -> UInt8
+    class func getHighByteOfWord(_ word: UInt16) -> UInt8
     {
         return UInt8(truncatingBitPattern: (word >> 8))
     }
@@ -223,7 +223,7 @@ class SSByte {
      - returns: The Bool value of the requested bit.
      */
     
-    class func getBitOfWord(word: UInt16, bitNumber: UInt8) -> Bool
+    class func getBitOfWord(_ word: UInt16, bitNumber: UInt8) -> Bool
     {
         if ((bitNumber % 16) >= 8)
         {
@@ -246,7 +246,7 @@ class SSByte {
      - returns: The input word with the requested bit set.
      */
     
-    class func setBitOfWord(word: UInt16, bitNumber: UInt8, value: Bool) -> UInt16
+    class func setBitOfWord(_ word: UInt16, bitNumber: UInt8, value: Bool) -> UInt16
     {
         var lowByte : UInt8
         var highByte : UInt8
@@ -274,7 +274,7 @@ class SSByte {
      - returns: The assembled word.
      */
     
-    class func wordFromBytes(highByte: UInt8, lowByte: UInt8) -> UInt16
+    class func wordFromBytes(_ highByte: UInt8, lowByte: UInt8) -> UInt16
     {
         return (UInt16(highByte) << 8) ^ UInt16(lowByte)
     }
@@ -286,7 +286,7 @@ class SSByte {
      - returns: The input word with bytes swapped.
      */
     
-    class func swapBytesInWord(word: UInt16) -> UInt16
+    class func swapBytesInWord(_ word: UInt16) -> UInt16
     {
         return wordFromBytes(getLowByteOfWord(word), lowByte: getHighByteOfWord(word))
     }
@@ -299,7 +299,7 @@ class SSByte {
      - returns: The rotated word.
      */
     
-    class func rotateLeftWord(word: UInt16, bits: Int) -> UInt16
+    class func rotateLeftWord(_ word: UInt16, bits: Int) -> UInt16
     {
         let d = UInt32(word) << UInt32(bits % 16)
         
@@ -314,7 +314,7 @@ class SSByte {
      - returns: The rotated word.
      */
     
-    class func rotateRightWord(word: UInt16, bits: Int) -> UInt16
+    class func rotateRightWord(_ word: UInt16, bits: Int) -> UInt16
     {
         let d = (UInt32(word) << 16) >> UInt32(bits % 16)
         
@@ -328,7 +328,7 @@ class SSByte {
      - returns: The reversed word.
      */
     
-    class func reverseWord(word: UInt16) -> UInt16
+    class func reverseWord(_ word: UInt16) -> UInt16
     {
         var newWord : UInt16 = 0x00
         for index : UInt8 in 0...15
@@ -345,7 +345,7 @@ class SSByte {
      - returns: The inverted word.
      */
     
-    class func invertWord(word: UInt16) -> UInt16
+    class func invertWord(_ word: UInt16) -> UInt16
     {
         let lowByte = invertByte(getLowByteOfWord(word))
         let highByte = invertByte(getHighByteOfWord(word))
@@ -361,7 +361,7 @@ class SSByte {
      - returns: The lower (least significant) word of the double word.
      */
     
-    class func getLowWordOfDoubleWord(double: UInt32) -> UInt16
+    class func getLowWordOfDoubleWord(_ double: UInt32) -> UInt16
     {
         return UInt16(truncatingBitPattern: double)
     }
@@ -373,7 +373,7 @@ class SSByte {
      - returns: The higher (most significant) word of the double word.
      */
     
-    class func getHighWordOfDoubleWord(double: UInt32) -> UInt16
+    class func getHighWordOfDoubleWord(_ double: UInt32) -> UInt16
     {
         return UInt16(truncatingBitPattern: (double >> 16))
     }
@@ -386,7 +386,7 @@ class SSByte {
      - returns: The Bool value of the requested bit.
      */
     
-    class func getBitOfDoubleWord(double: UInt32, bitNumber: UInt8) -> Bool
+    class func getBitOfDoubleWord(_ double: UInt32, bitNumber: UInt8) -> Bool
     {
         if ((bitNumber % 32) >= 16)
         {
@@ -409,7 +409,7 @@ class SSByte {
      - returns: The input double word with the requested bit set.
      */
     
-    class func setBitOfDoubleWord(double: UInt32, bitNumber: UInt8, value: Bool) -> UInt32
+    class func setBitOfDoubleWord(_ double: UInt32, bitNumber: UInt8, value: Bool) -> UInt32
     {
         var lowWord : UInt16
         var highWord : UInt16
@@ -438,7 +438,7 @@ class SSByte {
      - returns: The assembled double word.
      */
     
-    class func doubleWordFromWords(highWord: UInt16, lowWord: UInt16) -> UInt32
+    class func doubleWordFromWords(_ highWord: UInt16, lowWord: UInt16) -> UInt32
     {
         return (UInt32(highWord) << 16) ^ UInt32(lowWord)
     }
@@ -450,7 +450,7 @@ class SSByte {
      - returns: The input double word with words swapped.
      */
     
-    class func swapWordsInDoubleWord(double: UInt32) -> UInt32
+    class func swapWordsInDoubleWord(_ double: UInt32) -> UInt32
     {
         let lowWord = getLowWordOfDoubleWord(double)
         let highWord = getHighWordOfDoubleWord(double)
@@ -465,7 +465,7 @@ class SSByte {
      - returns: The rotated double word.
      */
     
-    class func rotateLeftDoubleWord(double: UInt32, bits: Int) -> UInt32
+    class func rotateLeftDoubleWord(_ double: UInt32, bits: Int) -> UInt32
     {
         
         let q = UInt64(double) << UInt64(bits % 32)
@@ -481,7 +481,7 @@ class SSByte {
      - returns: The rotated double word.
      */
     
-    class func rotateRightDoubleWord(double: UInt32, bits: Int) -> UInt32
+    class func rotateRightDoubleWord(_ double: UInt32, bits: Int) -> UInt32
     {
         let q = (UInt64(double) << 32) >> UInt64(bits % 32)
         
@@ -495,7 +495,7 @@ class SSByte {
      - returns: The reversed double word.
      */
     
-    class func reverseDoubleWord(double: UInt32) -> UInt32
+    class func reverseDoubleWord(_ double: UInt32) -> UInt32
     {
         var newDouble : UInt32 = 0x00
         for index :UInt8 in 0...31
@@ -512,7 +512,7 @@ class SSByte {
      - returns: The inverted double word.
      */
     
-    class func invertDoubleWord(double: UInt32) -> UInt32
+    class func invertDoubleWord(_ double: UInt32) -> UInt32
     {
         let lowWord = invertWord(getLowWordOfDoubleWord(double))
         let highWord = invertWord(getHighWordOfDoubleWord(double))
@@ -526,7 +526,7 @@ class SSByte {
      - returns: The float value with the same bit representation in memory.
      */
     
-    class func doubleWordToFloat(double: UInt32) -> Float
+    class func doubleWordToFloat(_ double: UInt32) -> Float
     {
         let sign = Float(getBitOfDoubleWord(double, bitNumber: 31) ? -1.0 : 1.0)
         var exponent = 0
@@ -550,7 +550,7 @@ class SSByte {
         
         if ((exponent == 255) && (mantissa > 0.0))
         {
-            return Float.NaN
+            return Float.nan
         }
         
         if ((exponent == 255) && (mantissa == 0.0))
